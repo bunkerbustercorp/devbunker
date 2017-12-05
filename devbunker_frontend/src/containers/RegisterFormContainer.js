@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { RegisterForm } from 'components';
+
 // import redux dependencies
 import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux';
@@ -61,8 +62,7 @@ class RegisterFormContainer extends Component {
             
             const { result } = this.props;
             UserActions.setUser(result);
-            history.push('/');
-            
+            history.push('/community');
             return;
         }
 
@@ -79,7 +79,7 @@ class RegisterFormContainer extends Component {
             const { result } = this.props;
             storage.set('__DEVBUNKER_USER__', result);
             UserActions.setUser(result);
-            history.push('/newspeed');
+            history.push('/community');
         } catch (e) {
             console.log(e);
         }

@@ -69,7 +69,7 @@ class LoginModalContainer extends Component {
             this.handleClose();
             const { history } = this.props;
             setTimeout(() => {
-                history.push('/newspeed');
+                history.push('/community');
             }, 400)
         } catch (e) {
             console.log(e);

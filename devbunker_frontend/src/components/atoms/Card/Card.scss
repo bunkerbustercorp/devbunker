@@ -1,10 +1,10 @@
 @import 'utils';
 
 .card {
-  background: white;
-  @include material-shadow(1, 0.5);
-  padding: 1rem;
-  &.noPadding {
-    padding: 0;
-  }
+    background: material-color('grey', '500');
+    @include material-shadow(1, 0.5);
+    padding: 1rem;
+    &.noPadding {
+        padding: 0;
+    }
 }

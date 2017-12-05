@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    PageTemplate,
+    HomeTemplate,
     RegisterTemplate,
     PolyBackground,
     Paper
@@ -23,7 +23,7 @@ class RegisterPage extends Component {
         const { half } = this.state;
 
         return (
-            <PageTemplate 
+            <HomeTemplate 
                 header={<HeaderContainer isRegister/>}>
                 <PolyBackground half={half}>
                 </PolyBackground>
@@ -32,7 +32,7 @@ class RegisterPage extends Component {
                         <RegisterFormContainer/>
                     </RegisterTemplate>
                 </Paper>
-            </PageTemplate>
+            </HomeTemplate>
         );
     }
 }

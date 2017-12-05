@@ -1,7 +1,13 @@
 import React from 'react';
 import styles from './Header.scss';
 import classNames from 'classnames/bind';
-import { Logo, HeaderNav, Button, UserButton, UserMenu } from 'components';
+import { 
+    Logo,
+    Button,
+    HeaderNav,
+    UserButton,
+    UserMenu
+} from 'components';
 
 const cx = classNames.bind(styles);
 
@@ -18,12 +24,11 @@ const Header = ({
 }) => {
     return (
         <div className={cx('header', { solid, shadow })}>
-        <div className={cx('responsive')}>
-            <div className={cx('logo-wrapper')}>
-                <Logo user={user}/>
-            </div>
-            { !isRegister && <div className={cx('right-side')}>
-                <div className={cx('desktop-only')}>
+            <div className={cx('responsive')}>
+                <div className={cx('logo-wrapper')}>
+                    <Logo user={user}/>
+                </div>
+                { !isRegister && <div className={cx('desktop-only')}>
                     <HeaderNav logged={user}/>
                     {
                         user ? (
@@ -37,10 +42,9 @@ const Header = ({
                             </Button>
                         )
                     }
-                </div>
-            </div> }
-            <UserMenu visible={userMenu} onHide={onHideUserMenu} eventTypes={["mouseup", "touchend"]} onLogout={onLogout}/>
-        </div>
+                </div> }
+                <UserMenu visible={userMenu} onHide={onHideUserMenu} eventTypes={["mouseup", "touchend"]} onLogout={onLogout}/>
+            </div>
         </div>
     );
 };

@@ -7,6 +7,8 @@ import * as baseActions from 'store/modules/base';
 import * as authActions from 'store/modules/auth';
 import { throttle } from 'lodash';
 
+import { withRouter } from 'react-router'
+
 import storage from 'lib/storage';
 
 class HeaderContainer extends Component {
@@ -87,4 +89,4 @@ export default connect(
         BaseActions: bindActionCreators(baseActions, dispatch),
         AuthActions: bindActionCreators(authActions, dispatch)
     })
-)(HeaderContainer);
+)(withRouter(HeaderContainer));

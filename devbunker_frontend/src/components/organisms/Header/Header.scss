@@ -24,24 +24,24 @@
 		height: 100%;
 		align-items: center;
 
-		.right-side {
-			.desktop-only {
-				display: flex;
-				@include media("<medium") {
-					display: none;
-				}
+		.desktop-only {
+			display: flex;
+			width: 100%;
+			justify-content: flex-end;
+			@include media("<medium") {
+				display: none;
 			}
-			.mobile-only {
-				@include media(">=medium") {
-					display: none;
-				}
+		}
+		.mobile-only {
+			@include media(">=medium") {
+				display: none;
 			}
-			margin-left: auto;
 		}
 	}
 
 	.login-button {
 		margin-left: 1rem;
+		width: 65px;
 		&:hover {
 			color: material-color('grey', '700');
 		}

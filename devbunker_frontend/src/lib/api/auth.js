@@ -10,7 +10,7 @@ export const localRegister = ({
     displayName,
     email,
     password
-})
+});
 export const localLogin = ({email, password}) => axios.post('/api/auth/login/local', {
     email, password
 });

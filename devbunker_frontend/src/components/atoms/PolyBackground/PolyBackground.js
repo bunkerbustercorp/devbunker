@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './PolyBackground.scss';
 import classNames from 'classnames/bind';
-import background from 'static/images/background12.png';
+import background from 'static/images/background1.png';
 
 const cx = classNames.bind(styles);
 

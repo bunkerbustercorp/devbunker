@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 const Logo = ({user}) => {
-	const path = user ? '/newspeed' : '/'
+	const path = user ? '/community' : '/'
 	return (
 		<Link to={path} className={cx('logo')}>
 			DevBunker

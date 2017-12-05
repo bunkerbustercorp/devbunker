@@ -1,0 +1,53 @@
+@import 'utils';
+
+.smallpost-wrapper {
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem;
+    display:flex;
+    flex-direction: column;
+    background: material-color('grey', '800');
+    color: white;
+    @include material-shadow(1, 0.5);
+
+    .smallpost-header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        .thumbnail {
+            width: 130px;
+            height: 180px;
+            &.java {
+                background: url('static/images/language/java.png');
+            }
+            &.html {
+                background: url('static/images/language/html5.png');
+            }
+            &.javascript {
+                background: url('static/images/language/javascript.png');
+            }
+            &.css3 {
+                background: url('static/images/language/css3.png');
+            }
+            &.php {
+                background: url('static/images/language/php.png');
+            }
+        }
+    }
+
+    .smallpost-content {
+
+        .title {
+            font-size: 1.5rem;
+        }
+        .writer {
+        }
+        .date {
+        }
+    }
+
+    .smallpost-footer {
+        display: flex;
+        flex-direction: row;
+    }
+}

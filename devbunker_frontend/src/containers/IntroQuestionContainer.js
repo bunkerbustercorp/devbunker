@@ -12,7 +12,7 @@ class IntroQuestionContainer extends Component {
         const { BaseActions, AuthActions, history, user } = this.props;
 
         if (user) {
-            history.push('/trade');
+            history.push('/community');
             return;
         }
 

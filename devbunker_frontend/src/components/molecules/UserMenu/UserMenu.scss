@@ -37,17 +37,20 @@
 }
 .user-menu {
     position: absolute;
-    right: 1rem;
-    top: 4rem;
+    right: 0rem;
+    top: 3.5rem;
     z-index: z-index-for('screen-mask');
     .card {
+        display: flex;
+        padding-top: 0.5rem;
         @include material-shadow(2, 0.5);
+        flex-direction: column;
         .menu-item {
             padding: 1rem;
             padding-top: 0.5rem;
             padding-bottom: 0.5rem;
             font-weight: 600;
-            color: material-color('grey', '600');
+            color: material-color('grey', '100');
             cursor: pointer;
             &:hover {
                 background: rgb(240, 240, 240);
@@ -56,6 +59,10 @@
             &:active {
                 background: rgb(230, 230, 230);
             }
+        }
+
+        .menu-item + .menu-item {
+            margin-top: 1rem;
         }
     }
 }

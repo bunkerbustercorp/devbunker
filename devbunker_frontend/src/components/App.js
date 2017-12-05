@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 
-import { HomePage, RegisterPage } from 'components';
+import { 
+    HomePage,
+    CommunityPage,
+    ReadPage,
+    WritePage,
+    RegisterPage
+} from 'components';
 import { Route } from 'react-router-dom';
 import { 
     ScreenMaskContainer,
@@ -14,6 +20,9 @@ class App extends Component {
         return (
         <div>
             <Route exact path ="/" component={HomePage}/>
+            <Route exact path ="/community" component={CommunityPage}/>
+            <Route exact path ="/read" component={ReadPage}/>
+            <Route exact path ="/write" component={WritePage}/>
             <Route path="/register" component={RegisterPage}/>
             <ScreenMaskContainer/>
             <LoginModalContainer/>
