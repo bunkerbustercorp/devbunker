@@ -15,6 +15,7 @@
     "koa-bodyparser": "^4.2.0",
     "koa-compress": "^2.0.0",
     "koa-router": "^7.3.0",
+    "koa-static": "^4.0.2",
     "moment": "^2.19.2",
     "mongoose": "^4.13.5",
     "mongoose-auto-increment": "^5.0.1",

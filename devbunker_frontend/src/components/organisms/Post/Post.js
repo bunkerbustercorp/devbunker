@@ -118,18 +118,32 @@ class Post extends Component {
                 <div className={cx('post-editor')} id="post-editor" onKeyUp={handleChange}>
                 </div>
                 <div className={cx('post-footer')}>
-                    <Button 
-                    className={cx('button')}
-                    flat color="grey"
-                    onClick={()=>onInsertPost(true)}>
-                        임시저장
-                    </Button>
-                    <Button
-                    className={cx('button')}
-                    flat color="grey"
-                    onClick={()=>onInsertPost(false)}>
-                        { saved ? '수정' : '게시' }
-                    </Button>
+                    { readonly
+                    ?   <FlexBox row><Button 
+						className={cx('button')}
+						flat color="grey"
+						onClick={()=>onEditPost(true)}>
+							수정
+						</Button>
+						<Button
+						className={cx('button')}
+						flat color="grey"
+						onClick={()=>onDeletePost(false)}>
+							삭제
+						</Button></FlexBox>
+					:	<FlexBox row><Button 
+						className={cx('button')}
+						flat color="grey"
+						onClick={()=>onInsertPost(true)}>
+							임시저장
+						</Button>
+						<Button
+						className={cx('button')}
+						flat color="grey"
+						onClick={()=>onInsertPost(false)}>
+							저장
+						</Button></FlexBox>
+					}
                 </div>
             </PostWrapper>
         );

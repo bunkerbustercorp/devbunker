@@ -23,6 +23,7 @@ class App extends Component {
             <Route exact path ="/community" component={CommunityPage}/>
             <Route exact path ="/read" component={ReadPage}/>
             <Route exact path ="/write" component={WritePage}/>
+            <Route exact path ="/mypage" component={CommunityPage}/>
             <Route path="/register" component={RegisterPage}/>
             <ScreenMaskContainer/>
             <LoginModalContainer/>

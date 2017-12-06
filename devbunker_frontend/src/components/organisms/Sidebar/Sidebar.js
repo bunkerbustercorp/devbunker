@@ -8,6 +8,7 @@ import Community from 'react-icons/lib/fa/newspaper-o';
 import Popular from 'react-icons/lib/fa/star';
 import SubScribe from 'react-icons/lib/fa/leanpub';
 import Mypage from 'react-icons/lib/fa/user';
+import Write from 'react-icons/lib/fa/pencil';
 
 const cx = classNames.bind(styles);
 
@@ -45,6 +46,10 @@ const Sidebar = ({
             <MenuItem to="/community">
                 <Community/>
                 커뮤니티
+            </MenuItem>
+            <MenuItem to="/write">
+                <Write/>
+                글쓰기
             </MenuItem>
             <MenuItem to="/subscribe">
                 <Popular/>

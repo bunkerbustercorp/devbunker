@@ -25,15 +25,15 @@ const Leftbar = ({user, minimum}) => (
                 </MenuItem>
                 <MenuItem minimum to="/popular">
                     <Popular/>
-                    { minimum ? <span className={cx('tooltip', 'b')}>인기 (개발 예정)</span> : '인기 (개발 예정)'}
+                    { minimum ? <span className={cx('tooltip', 'b')}>인기(개발예정)</span> : '인기 (개발 예정)'}
                 </MenuItem>
                 { user && <MenuItem minimum to="/subscribe">
                     <SubScribe/>
-                    { minimum ? <span className={cx('tooltip', 'c')}>구독 (개발 예정)</span> : '구독 (개발 예정)'}
+                    { minimum ? <span className={cx('tooltip', 'c')}>구독(개발예정)</span> : '구독 (개발 예정)'}
                 </MenuItem>}
                 { user && <MenuItem minimum to="/mypage">
                     <Mypage/>
-                    { minimum ? <span className={cx('tooltip', 'd')}>마이페이지</span> : '마이페이지'}
+                    { minimum ? <span className={cx('tooltip', 'd')}>마이페이지(개발예정)</span> : '마이페이지'}
                 </MenuItem>}
             </div>
             { minimum && <div className={cx('project')}>

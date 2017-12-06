@@ -76,7 +76,7 @@ class UserMenu extends Component {
         return (
         <div className={cx('user-menu')}>
             <Card className={cx('card', effect)} noPadding>
-		        <Link to='/my' className={cx('menu-item')}>마이 페이지</Link>
+		        <Link to='/mypage' className={cx('menu-item')}>마이 페이지</Link>
 		        <Link to='/write' className={cx('menu-item')}>글쓰기</Link>
                 <div onClick={onLogout} className={cx('menu-item')}>로그아웃</div>
             </Card>

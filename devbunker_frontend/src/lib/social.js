@@ -1,9 +1,14 @@
 import hello from 'hellojs';
 
 hello.init({
-    facebook: 1456738254380084,
-    google: '139700894213-90pmhsv3jrjaoln83f353fmjvspdibb9.apps.googleusercontent.com'
+    facebook: 939690429505200,
+    google: '981765274313-v4pla2sng69nnv7m2k0jaapoch830j3n.apps.googleusercontent.com'
 }, {redirect_uri: '/redirect.html'});
+
+/*hello.init({
+    facebook: 939690429505200,
+    google: '981765274313-v4pla2sng69nnv7m2k0jaapoch830j3n.apps.googleusercontent.com'
+}, {redirect_uri: '/api/auth/register/google'});*/
 
 export default(function () {
     return {

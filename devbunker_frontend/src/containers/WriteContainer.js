@@ -9,10 +9,15 @@ import * as postActions from 'store/modules/post';
 
 class WriteContainer extends Component {
 
-    componentDidMount() {
+    /*componentDidMount() {
         const { PostActions } = this.props;
         PostActions.initialize();
-    }
+    }*/
+
+	componentWillUnmount() {
+        const { PostActions } = this.props;
+        PostActions.initialize();
+	}
 
     handleChangeTitle = (e) => {
         const { PostActions } = this.props;
